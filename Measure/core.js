@@ -153,7 +153,7 @@ var SizeGuide = {
         [endFrame setHeight: 7];
         [endFrame setX: width - 1];
 
-        [text setStringValue: parseInt(width) + 'px'];
+        [text setStringValue: parseInt(width) + 'pt'];
         [text setFontSize: defaultConfig.fontSize];
         [text setFontPostscriptName: defaultConfig.fontType];
         [[text frame] setX: 5];
@@ -256,7 +256,7 @@ var SizeGuide = {
         [endFrame setHeight: 1];
         [endFrame setY: height - 1];
 
-        [text setStringValue: parseInt(height) + 'px'];
+        [text setStringValue: parseInt(height) + 'pt'];
         [text setFontSize: defaultConfig.fontSize];
         [text setFontPostscriptName: defaultConfig.fontType];
         [[text frame] setX: 5];
@@ -525,7 +525,7 @@ var TextGuide = function(position) {
       var layerFill = [[layer style] fill];
       if (layerFill && [[layerFill color] hexValue] == 'D8D8D8') setColor(layer, 'D8D8D8'); //fix default
       if (types['font']) textContent += 'font: ' + [layer fontPostscriptName] + '\r\n';
-      if (types['size']) textContent += 'size: ' + parseInt([layer fontSize]) + 'px\r\n';
+      if (types['size']) textContent += 'size: ' + parseInt([layer fontSize]) + 'pt\r\n';
       if (types['color']) textContent += 'color: ' + getColor(layer) + '\r\n';
       if (types['line']) textContent += 'line: ' + parseInt([layer lineSpacing] / [layer fontSize] * 100) + '%\r\n';
 
@@ -650,7 +650,7 @@ var Unit = function(type){
 
 
             var newLength = parseInt(length / scale[type]),
-                     unit = (type.match(/DPI/))? 'dp' : 'px';
+                     unit = (type.match(/DPI/))? 'dp' : 'pt';
                      text = textLayer.stringValue().replace( /(\d+[dxps]{2})/g, newLength + unit),
                 newTextLayer = addText('text');
 
