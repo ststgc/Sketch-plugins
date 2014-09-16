@@ -2,7 +2,7 @@
 
 A measure tool for measurements & design specs, **Sketch 3.0.2+ support**. 
 
-![Banner](http://cl.ly/image/1p3r0C1y2k40/banner@2x.png)
+![Banner](http://utom.us/new/assets/imgs/sketch-measure-icon@2x.png)
 
 ## Installing Plugins
 ### The conventional way:
@@ -23,16 +23,21 @@ _NOTE: If your Mac has not installed GitHub client, You need to install [GitHub 
 
 ## How-to
 
-[Demo video](https://vimeo.com/95008293)
+### Demo Video
+[![video](https://i.vimeocdn.com/video/478609399_960.jpg)](https://vimeo.com/98025780)
+[turn to vimeo.com](https://vimeo.com/98025780)
 
-1. Find any layers you want to measure
-2. Run measurements by either chooing it from the Plugins menu
+### Keyboard Shortcuts
+1. Sizes: `⌃` + `⌘` + `1`
+2. Margin or Padding: `⌃` + `⌘` + `2`
+3. Distances: `⌃` + `⌘` + `3`
+4. Properties: `⌃` + `⌘` + `4`
+5. Coordinates: `⌃` + `⌘` + `5`
 
-_NOTE:_
+### NOTE
 
 * _**Margin**: must be selecting a layer inside an artboard or selecting two layers._
 * _**Distance**: must be selecting two layers._
-* _**Guide Style**: If you want to change specified $GUIDE layers, you must select them. If you are not selecting will change all $GUIDE layer._
 
 
 ##Contact
